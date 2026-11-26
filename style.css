@@ -5,10 +5,16 @@ body {
   background-color: #DDA15E;
 }
 
+section {
+  background-color: #FEFAE0;
+}
+
 header {
+  background-color: #606C38;
 }
 
 footer {
+  background-color: #283618;
 }
 
 nav {
