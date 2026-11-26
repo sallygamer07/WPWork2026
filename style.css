@@ -1,9 +1,19 @@
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2);
+    font-weight: 400;
+    font-display: swap;
+}
+
 html {
+  display: block;
+  width: 100%;
+  heigth: 100%;
+  background-color: #DDA15E;
+  font-family: 'MaruBuri';
 }
 
 body {
-  display: block;
-  background-color: #DDA15E;
 }
 
 section {
