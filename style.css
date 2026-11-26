@@ -2,18 +2,27 @@ html {
 }
 
 body {
+  display: block;
   background-color: #DDA15E;
 }
 
 section {
+  display: block;
+  width: 80%;
+  height: 80%;
   background-color: #FEFAE0;
 }
 
 header {
+  display: flex;
+  position: sticky;
+  padding: 20px;
   background-color: #606C38;
 }
 
 footer {
+  display: block;
+  padding: 20px;
   background-color: #283618;
 }
 
