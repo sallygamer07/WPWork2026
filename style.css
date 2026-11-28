@@ -1,40 +1,186 @@
 @font-face {
-    font-family: 'MaruBuri';
-    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2);
-    font-weight: 400;
-    font-display: swap;
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2);
+  font-weight: 400;
+  font-display: swap;
 }
 
 html {
   display: block;
-  width: 100%;
-  heigth: 100%;
-  background-color: #DDA15E;
-  font-family: 'MaruBuri';
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+  background-color: #dda15e;
+  font-family: "MaruBuri";
 }
 
 body {
+  margin: 0;
+  display: block;
+}
+
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 10px 30px;
 }
 
 section {
   display: block;
-  width: 80%;
-  height: 80%;
-  background-color: #FEFAE0;
+  flex: 1;
+  max-width: 50%;
+  min-width: 0;
+  background-color: #dda15e;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.bookshelfLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 10px 10px 0 10px;
+  gap: 5px;
+  border-bottom: 15px solid #bc6c25;
+}
+.bookshelfLine img {
+  max-width: 100px;
+  min-width: 0;
+  max-height: 150px;
+  min-height: 150px;
+  height: auto;
+}
+.bookshelfLine img:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 header {
   display: flex;
   position: sticky;
-  padding: 20px;
-  background-color: #606C38;
+  padding: 5px 20px;
+  max-width: 100%;
+  background-color: #606c38;
+  color: #fefae0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+header h3 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 5px;
 }
 
 footer {
-  display: block;
-  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  max-width: 100%;
+  width: 100%;
   background-color: #283618;
 }
 
+footer p {
+  font-weight: 300;
+  font-size: 12px;
+  text-align: right;
+  color: #606c38;
+  margin-right: 20px;
+}
+
+.audioPlayer {
+  display: flex;
+  position: fixed;
+  margin-left: 10px;
+  padding: 5px;
+}
+
 nav {
+  display: flex;
+  position: sticky;
+  align-items: left;
+  top: 0;
+  width: 100%;
+  background-color: #606c38;
+}
+
+nav input[type="button"],
+.subNavBtn {
+  margin: 0 0 0 20px;
+  padding: 5px 10px;
+  width: 80px;
+  height: 100%;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  color: #283618;
+  background-color: #dda15e;
+}
+nav input[type="button"]:hover,
+.subNavBtn:hover {
+  background-color: #283618;
+  color: #fefae0;
+}
+
+nav .subNavBtn {
+  margin-left: auto !important;
+  margin-right: 10px !important;
+}
+
+aside {
+  margin: 30px 0;
+}
+
+.bookPanel {
+  display: flex;
+  width: fit-content;
+  padding: 10px;
+  background-color: #fefae0;
+  color: #283618;
+  border-radius: 5px;
+}
+.bookPanel img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+.bookPanel input[type="button"] {
+  margin: 5px 0 0 0;
+  padding: 5px 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #283618;
+  background-color: #fefae0;
+}
+.bookPanel input[type="button"]:hover {
+  color: #dda15e;
+}
+
+.bookInfo {
+  max-width: 200px;
+  height: auto;
+  padding: 15px 0 15px 30px;
+  margin-bottom: 10px;
 }
